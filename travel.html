@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia de Viajes - Sky Fly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <img src="travel.jfif" alt="Logo Sky Fly" class="logo-img">
+      <h1>Sky Fly</h1>
+    </div>
+  </header>
+
+  <main>
+    <img src="avion.jfif" alt="Banner Avión" class="banner-img">
+
+    <section class="busqueda">
+      <div class="busqueda-form">
+        <input type="text" placeholder="Lugar de partida" id="origen">
+        <input type="text" placeholder="Destino" id="destino">
+        <button onclick="buscarVuelos()">Buscar</button>
+        <div class="info-btn" onclick="mostrarQuienesSomos()">ℹ️ ¿Quiénes somos?</div>
+      </div>
+      <div class="filtros">
+        <button class="filtrar-btn" onclick="toggleFiltros()">Filtrar datos</button>
+        <div style="margin-left: auto; display: flex; align-items: center; gap: 10px;">
+          <button onclick="cambiarPasajeros(-1)" style="padding: 5px 10px; border-radius: 5px;">➖</button>
+          <span id="contador-pasajeros" style="font-weight: bold;">👤 1</span>
+          <button onclick="cambiarPasajeros(1)" style="padding: 5px 10px; border-radius: 5px;">➕</button>
+        </div>
+      </div>
+
+      <div id="form-filtros" style="display: none; margin-top: 20px;">
+        <label for="tipo">Tipo de viaje:</label>
+        <select id="tipo" style="margin-bottom: 10px; display: block; width: 100%; padding: 8px; border-radius: 5px;">
+          <option>Ida</option>
+          <option>Ida y vuelta</option>
+        </select>
+
+        <label for="clase">Clase:</label>
+        <select id="clase" style="margin-bottom: 10px; display: block; width: 100%; padding: 8px; border-radius: 5px;">
+          <option>Turista</option>
+          <option>Ejecutiva</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="catalogos">
+      <button onclick="alert('Catálogo 1 seleccionado')">Catálogos</button>
+      <button onclick="alert('Catálogo 2 seleccionado')">Catálogos</button>
+      <button onclick="alert('Catálogo 3 seleccionado')">Catálogos</button>
+    </section>
+
+    <section class="calendario">
+      <div class="calendario-header">
+        <span onclick="cambiarMes(-1)">⬅️</span>
+        <h2 id="mes-actual"></h2>
+        <span onclick="cambiarMes(1)">➡️</span>
+      </div>
+      <div class="calendario-grid" id="grid-calendario">
+        <strong>Dom</strong><strong>Lun</strong><strong>Mar</strong><strong>Mié</strong><strong>Jue</strong><strong>Vie</strong><strong>Sáb</strong>
+      </div>
+    </section>
+
+    <section class="quienes" id="seccion-quienes">
+      <h2>¿Quiénes somos?</h2>
+      <p>Información sobre la empresa. Información sobre la empresa. Información sobre la empresa. Información sobre la empresa.</p>
+    </section>
+
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <div class="redes">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

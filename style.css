@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #003366;
+    line-height: 1.6;
+}
+
+header.main-header {
+    padding: 20px;
+    text-align: center;
+    color: #003366;
+    background-color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.banner-img {
+    width: 100%;
+    display: block;
+    margin: 0 auto 40px auto;
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.busqueda {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.busqueda-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.busqueda-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1 1 200px;
+}
+
+.busqueda-form button, .info-btn, .catalogos button, .filtrar-btn {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.busqueda-form button:hover, .info-btn:hover, .catalogos button:hover, .filtrar-btn:hover {
+    background-color: #005b99;
+}
+
+.filtros {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-btn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.catalogos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.calendario {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.calendario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendario-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 5px;
+}
+
+.quienes {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    display: none;
+}
+
+.contacto {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+}
